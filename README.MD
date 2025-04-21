@@ -124,21 +124,6 @@ The Receiver Operating Characteristic (ROC) curve visualizes the trade-off betwe
 **F1-Confidence Curve:**
 The F1-Confidence curve illustrates the relationship between the F1 score and the classification confidence threshold. The plot indicates that the peak overall F1 score of 0.83 is achieved at a confidence threshold of approximately 0.446, suggesting this threshold optimizes the balance between precision and recall.
 
-## Project Structure
-
-The NeuroScan project is organized into the following primary directories and files:
-
-NeuroScan/
-├── main.py              # Main application entry point and GUI module
-├── preprocessing.py     # Module containing image preprocessing functions
-├── augmentation.py      # Module containing data augmentation operations
-├── model.py             # Module implementing the tumor detection model (YOLOv8)
-└── requirements.txt     # Lists the required Python dependencies
-
-## Future Enhancements
-
-Potential areas for future development of NeuroScan include expanding its detection capabilities to encompass a broader range of neurological conditions, integrating predictive functionalities, and refining the system's performance and usability to further enhance its utility in clinical neuro-oncology.
-
 ## Credits
 
 This project was conducted as a Final Year Project by myself under the supervision of Mr. Umair Ali.
