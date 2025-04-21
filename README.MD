@@ -1,6 +1,6 @@
 # NeuroScan Advanced Brain Tumor Detection System
 
-NeuroScan is a Final Year Project (FYP) focused on the development of an advanced system for brain tumor detection using machine learning and deep learning techniques. The project addresses the critical need for accurate and efficient diagnostic tools in medical imaging, aiming to support medical professionals in the timely identification of brain tumors in MRI and CT scans.
+I made this project as my Final Year Project (FYP) for my Bachelor of Science in Computer Science. It focuses on the development of an advanced system for brain tumor detection using machine learning and deep learning techniques. The project addresses the critical need for accurate and efficient diagnostic tools in medical imaging, aiming to support medical professionals in the timely identification of brain tumors in MRI and CT scans.
 
 ## Project Domain  Category
 
