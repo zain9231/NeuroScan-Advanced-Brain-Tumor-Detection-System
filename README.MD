@@ -128,8 +128,6 @@ The F1-Confidence curve illustrates the relationship between the F1 score and th
 
 This project was conducted as a Final Year Project by myself under the supervision of Mr. Umair Ali.
 
-Contact for inquiries bc200418437@vu.edu.pk
-
 ## Final Notes
 
 What's in the Files
