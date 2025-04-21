@@ -100,39 +100,40 @@ The model was trained using the prepared dataset with the following parameters
 
 Regularization techniques, including dropout and early stopping, were applied to prevent overfitting and enhance model performance.
 
+Markdown
+
 ## Results
 
 The performance of the NeuroScan model was evaluated using standard classification metrics, providing insights into its efficacy in brain tumor detection.
 
- Metric             Value          
- ----------------  ------------  
- Accuracy           85%            
- Precision          83%            
- Recall             87%            
- F1-Score           0.85           
- Specificity        82%                 
- AUC (ROC Curve)    0.83                                            
+| Metric            | Value |
+| :---------------- | :---- |
+| Accuracy          | 85%   |
+| Precision         | 83%   |
+| Recall            | 87%   |
+| F1-Score          | 0.85  |
+| Specificity       | 82%   |
+| AUC (ROC Curve)   | 0.83  |
 
-Confusion Matrix
+**Confusion Matrix:**
 The confusion matrix analysis revealed detailed performance across the four classes. The model demonstrated strong performance in correctly classifying instances of Class 1 (1626 instances) but exhibited limitations in correctly identifying instances of Class 3 (0 correct predictions), with a notable number of misclassifications involving Class 3.
 
-ROC Curve
+**ROC Curve:**
 The Receiver Operating Characteristic (ROC) curve visualizes the trade-off between the True Positive Rate and the False Positive Rate at varying thresholds. The curve's characteristics and the AUC value (0.83 or 0.88) indicate that the model possesses a significant capacity to discriminate between positive and negative cases, exceeding random chance performance.
 
-F1-Confidence Curve
+**F1-Confidence Curve:**
 The F1-Confidence curve illustrates the relationship between the F1 score and the classification confidence threshold. The plot indicates that the peak overall F1 score of 0.83 is achieved at a confidence threshold of approximately 0.446, suggesting this threshold optimizes the balance between precision and recall.
 
 ## Project Structure
 
-The NeuroScan project is organized into the following primary directories and files
+The NeuroScan project is organized into the following primary directories and files:
 
-NeuroScan
+NeuroScan/
 ├── main.py              # Main application entry point and GUI module
 ├── preprocessing.py     # Module containing image preprocessing functions
 ├── augmentation.py      # Module containing data augmentation operations
 ├── model.py             # Module implementing the tumor detection model (YOLOv8)
 └── requirements.txt     # Lists the required Python dependencies
-
 
 ## Future Enhancements
 
