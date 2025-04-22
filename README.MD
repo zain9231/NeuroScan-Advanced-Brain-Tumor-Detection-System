@@ -63,7 +63,7 @@ These instructions will guide you through setting up and running the NeuroScan s
 The dataset employed for the development and evaluation of NeuroScan comprises Brain MRI and CT images designated for brain tumor detection.
 
 Dataset Information
-The dataset includes images of varying resolutions and qualities. Dataset was provided by my supervisor.
+The dataset includes images of varying resolutions and qualities. The dataset was provided by my supervisor.
 
 ## Data Augmentation
 
@@ -73,17 +73,17 @@ Data augmentation was implemented to address limitations associated with dataset
 
 Prior to model ingestion, images undergo a series of preprocessing steps to standardize input and mitigate potential confounding factors. The preprocessing pipeline includes
 
-1.  Image Normalization Standardizing pixel intensity values across the dataset.
-2.  Noise Reduction Application of filtering techniques (e.g., Gaussian or median filters) to minimize image noise.
-3.  Skull Stripping Isolation of brain tissue by removing non-cerebral structures.
-4.  Artifact Removal Identification and mitigation of imaging artifacts.
+1.  Image Normalization: Standardizing pixel intensity values across the dataset.
+2.  Noise Reduction: Application of filtering techniques (e.g., Gaussian or median filters) to minimize image noise.
+3.  Skull Stripping: Isolation of brain tissue by removing non-cerebral structures.
+4.  Artifact Removal: Identification and mitigation of imaging artifacts.
 
 ## Data Split
 
 The dataset was partitioned to facilitate model training and objective performance evaluation
 
-1.  Training Set 70% of the dataset allocated for model training.
-2.  Testing Set 30% of the dataset reserved for evaluating the trained model's performance on unseen data.
+1.  Training Set: 70% of the dataset is allocated for model training.
+2.  Testing Set: 30% of the dataset is reserved for evaluating the trained model's performance on unseen data.
 
 ## Neural Network Architecture
 
@@ -93,10 +93,10 @@ The core of the NeuroScan system is a deep learning model based on the YOLOv8 ar
 
 The model was trained using the prepared dataset with the following parameters
 
- Optimizer Adam
- Loss Function Categorical cross-entropy
- Batch Size 16
- Epochs 50
+ Optimizer: Adam
+ Loss Function: Categorical cross-entropy
+ Batch Size: 16
+ Epochs: 50
 
 Regularization techniques, including dropout and early stopping, were applied to prevent overfitting and enhance model performance.
 
@@ -119,14 +119,14 @@ The performance of the NeuroScan model was evaluated using standard classificati
 The confusion matrix analysis revealed detailed performance across the four classes. The model demonstrated strong performance in correctly classifying instances of Class 1 (1626 instances) but exhibited limitations in correctly identifying instances of Class 3 (0 correct predictions), with a notable number of misclassifications involving Class 3.
 
 **ROC Curve:**
-The Receiver Operating Characteristic (ROC) curve visualizes the trade-off between the True Positive Rate and the False Positive Rate at varying thresholds. The curve's characteristics and the AUC value (0.83 or 0.88) indicate that the model possesses a significant capacity to discriminate between positive and negative cases, exceeding random chance performance.
+The Receiver Operating Characteristic (ROC) curve visualizes the trade-off between the True Positive Rate and the False Positive Rate at varying thresholds. The curve's characteristics and the AUC value (0.83) indicate that the model possesses a significant capacity to discriminate between positive and negative cases, exceeding random chance performance.
 
 **F1-Confidence Curve:**
 The F1-Confidence curve illustrates the relationship between the F1 score and the classification confidence threshold. The plot indicates that the peak overall F1 score of 0.83 is achieved at a confidence threshold of approximately 0.446, suggesting this threshold optimizes the balance between precision and recall.
 
 ## Credits
 
-This project was conducted as a Final Year Project by myself under the supervision of Mr. Umair Ali.
+This project was conducted as a final-year project by me, under the supervision of Mr. Umair Ali.
 
 ## Final Notes
 
@@ -134,7 +134,7 @@ What's in the Files
 
  The core project code is contained within the Python scripts (`.py` files) listed in the Project Structure.
  The trained weights for the YOLOv8 detection model are used by the application. The model loading is handled within the `model.py` file using the `ultralytics` library.
- The original dataset should be organized in a folder you select. The application will create 'preprocessed' and 'augmented' subfolders within the selected dataset folder when you perform those operations.
+ The original dataset should be organized in a folder that you select. The application will create 'preprocessed' and 'augmented' subfolders within the selected dataset folder when you perform those operations.
 
 Contributions are welcome!
 
